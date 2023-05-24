@@ -37,11 +37,11 @@ public class TestBase {
         if (browserName.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
 
-//			ChromeOptions options = new ChromeOptions();
-//			options.addArguments("window-size=1400,800");
-//			options.addArguments("headless");
-//			driver = new ChromeDriver(options);
-            driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("window-size=1400,800");
+			options.addArguments("headless");
+			driver = new ChromeDriver(options);
+//            driver = new ChromeDriver();
 
         } else if (browserName.equals("Fire")) {
             System.setProperty("webdriver.gecko.driver", "c:\\data\\geckodriver.exe");
